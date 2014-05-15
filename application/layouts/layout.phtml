@@ -1,0 +1,29 @@
+<?php echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+            
+		<?php echo $this->headMeta(); ?>
+		<?php echo $this->headTitle(); ?>
+            <?php echo $this->headLink()->prependStylesheet($this->baseUrl()."/css/main.css")."\n"; ?>
+            
+            
+            
+            <?php echo $this->headScript()->appendFile($this->baseUrl()."/js/jquery-1.7.1.min.js"); ?>
+            <?php echo $this->headScript()->appendFile($this->baseUrl()."/js/ajax.js"); ?>
+            
+            
+        </head>
+
+	</head>
+	<body>
+		<div id="wrap">
+                        <?php  echo $this->SiteHeader(""); ?>
+                        
+			<h3><?php echo $this->escape($this->title); ?></h3>
+                       
+			<?php echo $this->LoginForm($this->form,@$this->req); ?>
+                            <?php echo $this->layout()->content; ?>
+                          <?php  echo $this->SiteFooter(""); ?>
+		</div>
+	</body>
+</html>

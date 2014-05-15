@@ -1,0 +1,718 @@
+/* Free standard-compliant open source XHTML/CSS template provided by Eatlon.com */
+img
+{
+    box-shadow: 8px 3px 2px;
+    border-radius: 20px;
+}
+body {
+	background-image: url(../imgs/body_bg.gif);
+	background-repeat: repeat-x;
+	background-color: #9faec2;
+	font-family: arial, sans-serif;
+	font-size: .7em;
+	color: #828282;
+	padding: 0;
+	margin: 0;
+}
+
+
+a { text-decoration: none; color: #6d819d; padding: 0; margin: 0; }
+a:hover { text-decoration: none; color: #a42929; border-bottom: 1px solid #6d819d; outline: 0; padding: 0; margin: 0; }
+
+a.discrete { text-decoration: none; color: #7e7e7e; padding: 0; margin: 0; }
+a.discrete:hover { text-decoration: underline; color: #7e7e7e; border-bottom: 0; outline: 0; padding: 0; margin: 0; }
+
+a.title { text-decoration: none; color: #8f8f8f; padding: 0; margin: 0; }
+a.title:hover { text-decoration: none; color: #8f8f8f; border-bottom: 0; outline: 0; padding: 0; margin: 0; }
+
+h1 {
+	font-family: georgia, serif;
+	font-size: 5em;
+	font-weight: 100;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-style: italic;
+	font-weight: 100;
+	padding: 0;
+	margin: 0;
+}
+
+h3 {
+	font-family: georgia, serif;
+	font-size: 2.3em;
+	font-weight: 100;
+	line-height: 1em;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+
+h4 {
+	font-size: 1.3em;
+	font-weight: 100;
+	padding: 0;
+	margin: 0;
+}
+
+.in { text-indent: 20px; }
+
+#wrap {
+	width: 875px;
+	min-height: 450px;
+	height: auto !important;
+	height: 450px;
+	background-color: #fff;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#header {
+	width: 100%;
+	height: 140px;
+	background-image: url(../imgs/head_bg.gif);
+	background-repeat: repeat-x;
+	background-position: top center;
+}
+
+	.title_tagline {
+		width: 95%;
+		height: 140px;
+		background-image: url(../imgs/banner.gif);
+		background-repeat: no-repeat;
+		background-position: top right;
+		padding: 30px 0 0 30px;
+		margin: 0;	
+	}
+
+
+#menu {
+	height: 60px;
+	background-image: url(../imgs/menu_bg.gif);
+	background-repeat: no-repeat;
+	font-size: 1.1em;
+	padding: 11px 0 0 22px;
+	margin: auto 0;
+}
+
+#menu a { text-decoration: none; color: #fafafa; font-weight: bold; padding: 0; margin: 0; }
+#menu a:hover { text-decoration: none; color: #d0d0d0; outline: 0; padding: 0; margin: 0; }
+
+	#menu ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	#menu ul li {
+		float: left;
+		padding: 0 0 0 0;
+		margin: 0 10px 0 10px;
+	}
+
+
+#content {
+	background-color: #fff;
+	margin: 10px 0 0 0;
+	padding: 0 18px 0 20px;
+}
+
+/* The following CSS,
+	"submenu_a",
+	"right_wrap",
+	"content_middle" and
+	"submenu_b"
+define the double submenus layout for index.html */
+
+	.submenu_a {
+		float: left;
+		width: 15%;
+		padding: 0;
+		margin: 0 0 0 10px;
+	}
+
+		.submenu_a p {
+			padding: 0;
+			margin: 6px 0 0 0;
+		}
+
+		.submenu_a ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 5px 0 25px 0;
+		}
+
+		.submenu_a ul li {
+			padding: 0;
+			margin: 0;
+		}
+
+	.right_wrap {
+		float: right;
+		width: 80%;
+		padding: 0 24px 0 0;
+	}
+
+		.content_middle {
+			float: left;
+			width: 65%;
+			font-size: 1.1em;
+			line-height: 1.5em;
+			text-align: justify;
+			padding: 0 30px 0 25px;
+			margin: 0 1px 0 19px;
+			border-left: 1px solid #e0e0e0;
+			border-right: 1px solid #e0e0e0;
+		}
+
+			.content_middle p {
+				padding: 0;
+				margin: 7px 0 0 0;
+			}
+
+		.submenu_b {
+			float: right;
+			width: 18%;
+			padding: 0 9px 0 0;
+			margin: 0;
+		}
+
+			.submenu_b p {
+				padding: 0;
+				margin: 6px 0 0 0;
+			}
+
+			.submenu_b ul {
+				list-style-type: none;
+				padding: 0;
+				margin: 5px 0 25px 0;
+			}
+
+			.submenu_b ul li {
+				padding: 0;
+				margin: 0;
+			}
+
+/* The following CSS,
+	"menu_left" and
+	"content_right"
+define the left-wing layout for index.html */
+
+	.menu_left {
+		float: left;
+		width: 16%;
+		padding: 0;
+		margin: 0 0 0 10px;
+	}
+
+		.menu_left p {
+			padding: 0;
+			margin: 6px 0 0 0;
+		}
+
+		.menu_left ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 5px 0 25px 0;
+		}
+
+		.menu_left ul li {
+			padding: 0;
+			margin: 0;
+		}
+
+	.content_right {
+		float: right;
+		width: 75%;
+		font-size: 1.1em;
+		line-height: 1.5em;
+		text-align: justify;
+		padding: 0 20px 0 25px;
+		margin: 0;
+		border-left: 1px solid #e0e0e0;
+	}
+
+		.content_right p {
+			padding: 0;
+			margin: 7px 0 0 0;
+		}
+
+/* The following CSS,
+	"content_left" and
+	"menu_right"
+define the right-wing layout for right_wing.html */
+
+	.content_left {
+		float: left;
+		width: 74%;
+		font-size: 1.1em;
+		line-height: 1.5em;
+		text-align: justify;
+		padding: 0 25px 0 10px;
+		margin: 0;
+		border-right: 1px solid #e0e0e0;
+	}
+
+		.content_left p {
+			padding: 0;
+			margin: 7px 0 0 0;
+		}
+
+	.menu_right {
+		float: right;
+		width: 16%;
+		padding: 0 20px 0 0;
+		margin: 0;
+	}
+
+		.menu_right p {
+			padding: 0;
+			margin: 6px 0 0 0;
+		}
+
+		.menu_right ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 5px 0 25px 0;
+		}
+
+		.menu_right ul li {
+			padding: 0;
+			margin: 0;
+		}
+
+
+.square {
+	width: 120px;
+	border-top: 1px solid #bcc6d4;
+	border-bottom: 1px solid #bcc6d4;
+	padding: 5px 8px 5px 0;
+	margin: 0 0 25px 0;
+}
+
+.post { padding: 0 0 20px 0; }
+
+.layouts { text-align: center; padding: 10px 0 0 0; }
+
+#bottom {
+	clear: both;
+	width: 100%;
+	height: 163px;
+	background-image: url(../imgs/bottom_bg.gif);
+	background-repeat: no-repeat;
+	padding: 0;
+	margin: 0 auto;
+}
+
+	.footer {
+		width: 100%;
+		text-align: center;
+		padding: 40px 0 0 0;
+		margin: 0;
+	}
+        
+div.sessio-act
+{
+    height: 30px;
+    width:825px;
+    font-size: 15px;
+    line-height: 30px;
+ 
+   padding-right: 60px;
+    text-align: left;
+    padding:  10px;
+    
+}
+div.logout
+{
+    background-image:url(../imgs/logut.png); 
+    width:24px;
+    float:right;
+    height: 24px;
+    margin-top: 15px;
+}
+
+.loginform
+{
+   padding:12px 0 24px 20px;
+   margin: 0 auto;
+   width:200px;
+}
+#formlogin
+{
+    margin:0 auto;
+	padding:0;
+	width:auto;
+	height:170px;
+        
+    
+}
+
+#showformerrors
+{
+    margin:0;
+	padding:0;
+	width:auto;
+	height:120px;
+        display: block;
+    
+}
+
+
+ 
+#formlogin .label, #showformerrors .label
+{
+    font-weight: bold;
+    margin-left: 10px;
+}
+#formlogin input[type='text'],#formlogin input[type='password'] , #showformerrors  input[type='password'] ,#showformerrors input[type='text']
+{
+    margin-left: -30px;
+}
+form input
+{
+ margin: 5px;
+     background:none;
+     padding:6px 6px;
+     width:168px;
+   
+     outline:none;
+	border:thin solid gray;
+        border-radius: 3px;
+    
+}
+
+#formEmpl input
+{
+    margin: 8px;
+        width:168px;
+        font-size: 14px;
+        
+        border:#666666 solid 2px;
+}
+#formEmpl input[type="radio"]
+{
+    
+        font-size: 14px;
+        
+     
+     margin: 8px;
+     width: 30px;
+}
+#contenidor
+{
+    width:200px;
+}
+#formlogin input, #showformerrors input
+ {
+     margin: 5px;
+     background:none;
+     padding:3px 6px;
+     width:168px;
+    
+     outline:none;
+	border:thin solid gray;
+        border-radius: 3px;
+ }
+ #formlogin input:focus, #showformerrors input:focus
+ {
+     background-color: white;
+     color:gray;
+ }
+ #formlogin input[type='submit'], #showformerrors  input[type='submit']
+ {
+     margin-left: 14px;
+     width: 40px;
+     height: 40px;
+     background:url("../images/login.png ") no-repeat center;
+ }
+ 
+input[type="submit"]
+{
+    background-color: gray;
+}
+ form .label
+{
+    font-weight: bold;
+    margin-left: 10px;
+}
+#formlogin input[type='text'],#formlogin input[type='password']
+{
+    margin-left: -30px;
+}
+ form input:focus
+ {
+     background-color: white;
+     color:gray;
+ }
+ 
+ #formlogin input[type='submit']
+ {
+     margin-left: 14px;
+     width: 40px;
+     height: 40px;
+     background:url("../imgs/login.png ") no-repeat center;
+ }
+#formloginSimple input[type='submit']
+{
+    margin-left: 14px;
+     width: 40px;
+     height: 40px;
+     background:url("../imgs/login.png ") no-repeat center;
+}
+
+ #formEmpl fieldset#fieldset-left, #formEmpl fieldset#fieldset-right
+{
+    float: left;
+    width: 15%;
+    border: none;
+}
+ 
+#formEmpl #fieldset-bottom
+{
+    clear: both;
+    border: none;
+    width: 300px;
+}
+ 
+#formEmpl dd
+{
+    margin: 0;
+}
+#formEmpl label
+{
+    
+    font-size:14px;
+}
+#formEmpl fieldset .hint
+{
+    font-weight: bold;
+}
+
+
+.cont-element-add-emp
+{
+    width:500px;
+    margin: 0 auto;
+}
+ul.errors > li
+{
+    color:red;
+    
+    
+}
+#view-list
+{
+    font-size:1.4em;
+}
+#view-list-empleats
+{
+    margin:20px;
+    float:left;
+    width:800px;
+ 
+    
+}
+#view-list-empleats table 
+{
+       width: 100%;
+}
+#view-list-projectes table 
+{
+   
+    width: 100%;
+}
+
+#view-list-projectes table tr th
+{
+       background-color: rgba(100,200,200,0.3);
+       color:aliceblue;
+}
+#view-list-projectes table tr td
+{
+    padding-left:  2px;
+    margin: 5px;
+}
+#view-list-empleats table tr th
+{
+       background-color: rgba(100,200,200,0.3);
+       color:aliceblue;
+}
+#view-list-empleats table tr td
+{
+    padding-left:  2px;
+    margin: 5px;
+}
+#view-list-projectes
+{
+    margin:20px;
+    width:800px;
+    
+    
+    float:left;
+}
+
+.clearfix
+{
+    clear:both
+}
+/*Class buttons de gestio*/
+div.butedit{
+    background-image: url(../imgs/edit.png);
+    width: 24px;
+    height: 24px;
+}
+div.butdel{
+    background-image: url(../imgs/delete.png);
+    width: 24px;
+    height: 24px;
+}
+div.butgesttasks
+{
+    background-image: url(../imgs/taks.png);
+        width: 32px;
+    height: 32px;
+}
+div.butback
+{
+    background-image: url(../imgs/back.png);
+        width: 32px;
+    height: 32px;
+}
+div.butnew
+{
+    background-image: url(../imgs/new.png);
+        width: 32px;
+    height: 32px;
+}
+.row-dif
+{
+    background-color: rgba(120,200,233,0.5);
+}
+td.desc
+{
+    display:block;
+    
+    overflow:auto;
+}
+fieldset
+{
+    border:none;
+}
+select
+{
+    margin:6px;
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+    width: 140px;
+    
+}
+select:disabled
+{
+    cursor:no-drop;
+}
+.cont-element-proj
+{
+    
+    margin-left: 0px;
+}
+.cont-element-oper
+{
+    margin-left: 0px;
+}
+#projects-tasks-reset
+{
+    width: 60px;
+}
+#view-list-info
+{
+    font-size:1.4em;
+ width: 100%;   
+}
+#view-list-info table
+{
+    width: 100%;
+}
+#operacio-projects-tasks-Reset
+{
+    width:60px;
+    margin-left: 80px;
+}
+#send-cont-subform
+{
+    width:60px;
+}
+
+.element-row-content-send
+{
+    width: 80px;
+    height: 80px;
+    margin-top:-15px;
+}
+.element-content-send
+{
+    
+    width: 80px;
+    height: 80px;
+    margin-top:-15px;
+    margin-right: -15px;
+}
+.paginationControl
+{
+    width:400px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin:15px auto;
+    font-weight: bold;
+    text-align: center;
+}
+.cont-form
+{
+    width: 200px;
+    margin:0 auto;
+}
+#send-cont-subform
+{
+    margin-top:20px;
+}
+#view-list-tasks
+{
+    margin: 0 auto;
+    width:500px;
+}
+#view-list-tasks table
+{
+    width: 100%;
+    font-size:14px;
+    
+}
+
+#view-list-tasks table tr th
+{
+       background-color: rgba(100,200,200,0.3);
+       color:aliceblue;
+}
+#view-list-tasks table tr td
+{
+    padding-left:  2px;
+    margin: 5px;
+}
+#view-info
+{
+    font-size: 15px;
+    
+}
+#view-info a
+{
+    display: block;
+}
+p
+{
+    font-size: 14px;
+    font-weight: bold;
+}

@@ -1,0 +1,14 @@
+<div style="height: 250px;">
+    <div><a href="<?php echo $this->url(array("controller"=>"info","action"=>"index")) ?>"><div class="butback" title="Tornar"></div></a></div>
+    
+    <?php echo $this->formEmp; ?>
+    <div id="container-proj">
+	</div>
+	<script type="text/javascript">
+	  $("#enviar").change(function() {
+              
+	        $('#container-proj').load('<?php echo $this->baseUrl();?>/info/generatelist/proj/'+$(this).val());
+	  });
+</script>
+    
+</div>

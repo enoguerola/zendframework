@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+ <nav>
+  <index>
+   <label>Inici</label>
+   <uri>/'APPLICATION_PATH'/index</uri>
+    <pages>
+        <admin>
+            <label>Administrador</label>
+            <uri>/admin/admin </uri>
+        </admin>
+        <login>
+            <label>Login</label>
+            <uri>/auth/login </uri>
+        </login>
+    </pages>
+  </index>
+  
+</nav>
+</config>
+

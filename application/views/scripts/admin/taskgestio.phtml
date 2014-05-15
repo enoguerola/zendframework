@@ -1,0 +1,36 @@
+<div><a href="<?php echo $this->url(array("controller"=>"admin","action"=>"adminproj")) ?>"><div class="butback" title="Tornar"></div></a></div>
+<div id="view-list-tasks">
+    <h2>Afegir tasques</h2>
+    <div id="formAfegTask">
+        <?php echo $this->formTask; ?>
+    </div>
+    <table>
+            <caption>Llistat de Tasques</caption>
+            <tr>
+                <th>
+                    Nom
+                </th>
+            </tr>
+                 <?php $i=0;
+                    foreach ($this->tasks as $task)
+                    {
+                        if($i%2==0)
+                        {
+                            $class="class='row-dif'";
+                        }
+                        else
+                        {
+                            $class="";
+                        }
+                        
+                        ?>
+                        <tr <?php echo $class; ?>>
+                            <td><?php echo $task->nom; ?> </td>
+                            <td> <a href="<?php echo $this->url(array("controller"=>"admin","action"=>"deletetask","idproj"=>$this->idproj,"id_tasca"=>$task->id_tasca))?>" ><div class="butdel" title="Eliminar Tasca">"</div></a></td>
+                        </tr>
+                <?php
+                    $i++;}
+                    ?>
+        </table>
+    
+</div>

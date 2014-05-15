@@ -1,0 +1,11 @@
+<p>Segur que vols eliminar aquesta tasca??
+'<?php echo $this->escape($this->task['nom']); ?>'
+
+</p>
+<form action="<?php echo $this->url(array('action'=>'deletetask',"idproj"=>$this->idproj)); ?>" method="post">
+	<div>
+		<input type="hidden" name="id_tasca" value="<?php echo $this->task['id_tasca']; ?>" />
+		<input type="submit" name="del" value="Si" />
+		<input type="submit" name="del" value="No" />
+	</div>
+</form>

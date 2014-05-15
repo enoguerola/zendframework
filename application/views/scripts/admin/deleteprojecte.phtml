@@ -1,0 +1,11 @@
+<p>Segur que vols eliminar aquest projecte??
+'<?php echo $this->escape($this->proj['nom']); ?>'
+
+</p>
+<form action="<?php echo $this->url(array('action'=>'deleteprojecte')); ?>" method="post">
+	<div>
+		<input type="hidden" name="id" value="<?php echo $this->proj['id']; ?>" />
+		<input type="submit" name="del" value="Si" />
+		<input type="submit" name="del" value="No" />
+	</div>
+</form>

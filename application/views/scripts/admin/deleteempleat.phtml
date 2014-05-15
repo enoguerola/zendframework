@@ -1,0 +1,11 @@
+<p>Segur que vols eliminar aquest empleat??
+'<?php echo $this->escape($this->emp['dni']); ?>' por 
+'<?php echo $this->escape($this->emp['nom']); ?>'?
+</p>
+<form action="<?php echo $this->url(array('action'=>'deleteempleat')); ?>" method="post">
+	<div>
+		<input type="hidden" name="id" value="<?php echo $this->emp['id']; ?>" />
+		<input type="submit" name="del" value="Si" />
+		<input type="submit" name="del" value="No" />
+	</div>
+</form>

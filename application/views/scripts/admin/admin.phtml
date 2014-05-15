@@ -1,0 +1,61 @@
+<div id="view-list">
+    <div ><a href="<?php echo $this->url(array("controller"=>"admin","action"=>"adminproj")); ?>">  &gt;  Llistat  de projectes </a></div>
+    <div id="view-list-empleats">
+        <a href="<?php echo $this->url(array("controller"=>"admin","action"=>"addempleat")); ?>"><div class="butnew" title="Afegir empleat"></div></a>
+        <table>
+            <tr>
+                <th>
+                    Nom
+                </th>
+                <th>
+                    DNI
+                </th>
+                <th>
+                    Data de naixement
+                </th>
+                <th>
+                    Sexe
+                </th>
+                <th>
+                    Email
+
+                </th>
+                <th>
+                    Telefon
+                </th>
+            </tr>
+            
+                <?php 
+                $i=0;
+                    foreach ($this->listEmpleats as $empleat)
+                    {
+                        if($i%2==0)
+                        {
+                            $class="class='row-dif'";
+                        }
+                        else
+                        {
+                            $class="";
+                        }
+                        
+                        ?>
+                        <tr <?php echo $class; ?>>
+                            <td><?php echo $empleat->nom; ?> </td> 
+                            <td><?php echo $empleat->dni; ?> </td> 
+                            <td><?php echo $empleat->data_naix; ?> </td> 
+                            <td><?php echo $empleat->sexe=="d"?"Dona":"Home"; ?> </td> 
+                            <td><?php echo $empleat->email; ?> </td> 
+                            <td><?php echo $empleat->telf; ?> </td> 
+                            <td> <a href="<?php echo $this->url(array("controller"=>"admin","action"=>"editempleat","id"=>$empleat->id))?>" ><div class="butedit" title="Modificar Empleat">"</div></a></td>
+                            <td> <a href="<?php echo $this->url(array("controller"=>"admin","action"=>"deleteempleat","id"=>$empleat->id))?>" ><div class="butdel" title="Eliminar empleat">"</div></a></td>
+                         </tr>
+                <?php
+                        $i++;
+                    }
+                ?>
+            
+        </table>
+
+    </div>
+    <div class="clearfix"></div>
+</div>

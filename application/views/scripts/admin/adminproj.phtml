@@ -1,0 +1,46 @@
+<div id="view-list">
+    <div ><a href="<?php echo $this->url(array("controller"=>"admin","action"=>"admin")); ?>"> &gt;  Llistat  d'empleats</a></div>
+    <div id="view-list-projectes">
+
+        <a href="<?php echo $this->url(array("controller"=>"admin","action"=>"addProjecte")); ?>"><div class="butnew" title="Afegir projecte"></div></a>
+        <table>
+            <caption>Projectes</caption>
+            <tr>
+                <th>
+                    Nom
+                </th>
+                <th>
+                    Descripcio
+                </th>
+                
+            </tr>
+                 <?php 
+                 $i=0;
+                    foreach ($this->listProjects as $projecte)
+                    {
+                        if($i%2==0)
+                        {
+                            $class="class='row-dif'";
+                        }
+                        else
+                        {
+                            $class="";
+                        }
+                        
+                        ?>
+                        <tr <?php echo $class; ?>>
+                            <td><?php echo $projecte->nom; ?> </td> 
+                            <td class="desc"><?php echo $projecte->descripcio; ?> </td> 
+                             <td> <a href="<?php echo $this->url(array("controller"=>"admin","action"=>"editprojecte","id"=>$projecte->id))?>" ><div class="butedit" title="Modificar Projecte">"</div></a></td>
+                            <td> <a href="<?php echo $this->url(array("controller"=>"admin","action"=>"deleteprojecte","id"=>$projecte->id))?>" ><div class="butdel" title="Eliminar projecte">"</div></a></td>
+                            <td><a href="<?php echo $this->url(array("controllers"=>"admin","action"=>"taskgestio","idproj"=>$projecte->id)) ?>" ><div class="butgesttasks" title="Gestio de tasques"></div></a></td>
+                            
+                        </tr>
+                <?php
+                    $i++;}
+                    ?>
+        </table>
+
+    </div>
+    <div class="clearfix"></div>
+</div>

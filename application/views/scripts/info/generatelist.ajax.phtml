@@ -1,0 +1,40 @@
+
+      <?php if (count($this->productos)): ?>
+
+    <table>  
+    <tr>  
+        <th>Projecte</th>  
+        <th>Tasca </th>  
+        <th>data</th>  
+        <th>Operacio</th>  
+    </tr>  
+    <?php $i=0; foreach($this->productos as $producto){ 
+        if($i%2==0)
+            {
+                $class="class='row-dif'";
+            }
+            else
+            {
+                $class="";
+                        }?>  
+    
+    <tr <?php echo $class;  ?>>  
+        <td><?php echo $producto['id_proj']; ?></td>  
+        <td><?php echo $producto['id_tasca']; ?></td>  
+        <td><?php echo $producto['data_hora']; ?></td>  
+        <td><?php echo $producto['operacio']; ?></td>  
+        
+    </tr>  
+    <?php $i++;}?> 
+    </table>  
+</ul>
+<?php endif; ?>
+<?php
+/*
+* Print the pagination of type , drop down or search type or of your choice.
+*/
+echo $this->paginationControl($this->productos,
+                                    'Jumping',
+                                    'paginator.phtml'); ?>
+
+     
